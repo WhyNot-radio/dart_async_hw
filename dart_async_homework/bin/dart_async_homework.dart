@@ -1,5 +1,11 @@
-import 'dart:async';
+import 'package:dart_async_homework/homeworks/lesson11/Future/task1.dart';
 
-void main(List<String> arguments, dynamic dart_async_homework) {
-  print('Hello world: ${dart_async_homework.calculate()}!');
+void main () async{
+  fetchName();
+  print("Починаємо отримувати ім'я...");
+  String name = await fetchName();
+
+  print("Мене звати $name");
+
+  print("Завершили роботу програми.");
 }
